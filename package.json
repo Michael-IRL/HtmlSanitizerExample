@@ -1,0 +1,24 @@
+{
+  "name": "HtmlSanitizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "serve": "http-server",
+    "postbuild": "shx cp dist/*.js node_modules/@jitbit/htmlsanitizer/HtmlSanitizer.js public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jitbit/htmlsanitizer": "^2.0.2"
+  },
+  "devDependencies": {
+    "http-server": "^13.0.0",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^4.9.2",
+    "shx": "^0.3.4"
+  }
+}
